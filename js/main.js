@@ -1,4 +1,19 @@
-document.querySelector('#clickMe').addEventListener('click', makeReq)
+document.querySelector('#clickMe').addEventListener('click', shake)
+
+
+
+function shake() {
+  const ball = document.getElementById('ball')
+  // let messageText = document.getElementById('message')
+
+  ball.classList.add('shake')
+  setTimeout( () => { 
+    ball.classList.remove('shake');
+  }, 2000);
+
+  makeReq()
+}
+
 
 async function makeReq(){
 
@@ -8,6 +23,10 @@ async function makeReq(){
   
 
   console.log(data.question);
-  document.querySelector("#questionHighlight").textContent = data.question
-  document.querySelector("#answer").textContent = data.answer
+  setTimeout(() => {
+    document.querySelector("#answer").textContent = data.answer
+  }, 1000);
+
+  
 }
+
