@@ -80,6 +80,9 @@ const server = http.createServer((req, res) => {
     case '/css/style.css':
       addFileToResponse('css/style.css', 'text/css', res);
       break;
+    case '/8-Ball.png':
+      addFileToResponse('8-Ball.png', 'image/png', res);
+      break;
     case '/js/main.js':
       addFileToResponse('js/main.js', 'text/javascript', res);
       break;
