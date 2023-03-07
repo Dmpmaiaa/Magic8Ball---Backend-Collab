@@ -12,7 +12,7 @@ Ever wanted your very own answer machine for any and every question you may have
 A collaboration project to create a backend API using Node.js as a platform. The client files, including html,css & javascript, are served to the user directly from the backend upon request to a default route. The user can then use a custom html form to input whatever question they desperately need answered. A linked asynchronous javascript function performs a http request to the 8Ball server which generates a response. A valid reponse is sent if the 8Ball server detects a question, otherwise the user is informed that a question must be asked of the 8Ball in order to get an answer.
 
 ## Optimizations
-*(optional)*
+
 
 Some additional information for the user if an invalid input is used would greatly enhance usability of the web application. Furthermore some additional visual styling such as a visual 8Ball image that shakes would have been preferrable to an input and button for querying and displaying responses.
 
